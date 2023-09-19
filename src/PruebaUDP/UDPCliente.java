@@ -18,7 +18,7 @@ public class UDPCliente
 			// buffer con info a enviar
 			byte[] bEnviar = "Adrian".getBytes();
 			// ip del server
-			byte[] ip = { (byte) 192,(byte) 168,0,120 };
+			byte[] ip = {192,168,0,120};
 			InetAddress address = InetAddress.getByAddress(ip);
 			// paquete de informacion a enviar, ip + port (5432)
 			DatagramPacket packet = new DatagramPacket (bEnviar, bEnviar.length, address, 5432);
