@@ -15,7 +15,7 @@ public class DemoCliente
 		
 		try 
 		{
-			s = new Socket("192.168.0.120",5432);
+			s = new Socket("192.1680.120",5432);
 			oos = new ObjectOutputStream(s.getOutputStream());
 			ois = new ObjectInputStream(s.getInputStream());
 			
